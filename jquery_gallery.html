@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>
+gallery
+</title>
+<style>
+#slider1 {
+    width: 300px;
+    height: 200px;
+    background: red;
+}
+#slider1 .some-button {
+    color: green;
+}
+
+#slider2 {
+    width: 700px;
+    height: 400px;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+jQuery(document).ready(function($) {
+    $('#slider1, #slider2').royalSlider({
+        controlNavigation:'bullets'                                                  //single control for both sliders
+    });
+});
+
+</script>
+</head>
+<body>
+<div class="row">
+  <div class="col-sm-6">
+ 
+<div id="slider1" class="royalSlider rsDefault">
+   <!-- slides for first slider -->
+</div></div>
+<div class="col-sm-6">
+<div id="slider2" class="royalSlider rsDefault">
+   <!-- slides for second slider  -->
+</div></div>
+</div>
+</body>
+</html>
