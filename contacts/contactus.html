@@ -1,0 +1,37 @@
+<div class="container-fluid " id="scroll">
+    <div class="row">
+        <div class="col-lg-12 help-text">
+	        <h4>For any queries/feedback on the website/online services, please contact us at 
+	        	<a href="mailto:webops@saarang.org" target="_blank">webops@saarang.org</a>
+        	</h4>
+            <h2><b>Saarang 2017 Team</b></h2>
+        </div>
+    </div>
+    <div ng-repeat="tab in contacts2017" id="{{tab.name}}">
+        <div ng-show="$index===0" class="row">
+            <div class="col-md-6" ng-repeat="secretary in secretaries2017">
+				<h3 class="sec-dept">{{secretary.title}}</h3>
+                
+				<img width="196px" ng-src="../assets/images/core_pics/{{secretary.img}}" class="img-responsive"/>
+				<span>{{secretary.name}}</span><br>
+                <span><a href="mailto:{{secretary.email}}" target="_blank">{{secretary.email}}</a></span><br>
+				<span>{{secretary.phone}}</span>
+            </div>
+        </div>
+
+		<div  ng-hide="$index===0||$index===1" class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h3>{{tab.name}}</h3>
+			</div>
+		</div>
+		<div  ng-hide="$index===0||$index===1" class="row">
+			<div ng-class="{'col-md-2' : true,'col-md-offset-5':{{tab.members.length===1}}, 'col-md-offset-4':{{tab.members.length===2}} && {{$index===0}}, 'col-md-offset-3':{{tab.members.length===3}} && {{$index===0}}}" ng-repeat="member in tab.members">	
+				<img ng-src="../assets/images/core_pics/{{member.img}}" class="img-responsive"/>
+				<span>{{member.name}}</span><br>
+                <span><a href="mailto:{{member.email}}" target="_blank">{{member.email}}</a></span><br>
+				<span>{{member.phone}}</span>
+			</div>
+		</div>	
+	</div>		
+</div>	
+
