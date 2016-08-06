@@ -1,0 +1,240 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="http://demos.flesler.com/jquery/scrollTo/js/jquery.scrollTo-min.js"></script>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Play);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+$primaryColor : #D00463;
+$secondaryColor : #389ba6;
+$mainColor : #D00463;
+$primaryfamily : 'Quicksand', sans-serif;
+$secondaryfamily : 'Roboto', sans-serif;
+
+body{
+  background-color: #1b1a1a;
+	color: #ffffff;
+	font-family: $primaryfamily;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Title{
+  font-size: 35px;
+  margin: 45px 0;
+  text-align: center;
+}
+
+/***********/
+/* Content */
+/***********/
+.Content{
+  font-family: 'Quicksand';
+  margin: 0px auto;
+  width: 600px;
+}
+  
+  .Content-text{
+    padding-bottom: 40px;
+  }
+
+  .Content-title{
+    border-bottom: 2px solid #ccc;
+    color: #80a604;
+    font-family: "play";
+    font-size: 25px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+  }
+
+/**************************/
+/* Scrolling progress bar */
+/**************************/
+.ProgressBar {
+  position: absolute;
+  top: 147px;
+  left: 50%;
+  margin-left: -350px;
+  overflow: inherit;
+}
+
+  .ProgressBar-bar {
+    background-color: #ffffff;
+    display: block;
+    height: 100px;
+    position: relative;
+    width: 10px;
+    &:last-child,
+    &:last-child .ProgressBar-avancement{ 
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    &:first-child,
+    &:first-child .ProgressBar-avancement{ 
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+    /* .ProgressBar-bar:last-child .ProgressBar-circle{
+      display: none;
+    } */
+  .ProgressBar-avancement {
+    background-color: $primaryColor;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: block;
+    height: 0;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    z-index: 0;
+  }
+    .ProgressBar-avancement--active{
+      border-radius: 0px;
+    }
+  .ProgressBar-circle{
+    background-color: $primaryColor;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0 15px #ffffff;
+    top: -15px;
+    display: block;
+    height: 30px;
+    left: 50%;
+    margin-left: -15px;
+    //margin-top: -15px;
+    position: absolute;
+    //top: 50%;
+    transition: box-shadow 0.3s;
+    width: 30px;
+    z-index: 10;
+  }
+    .ProgressBar-circle--active{
+      box-shadow: inset 0 0 0 0 $primaryColor;
+    }
+
+  .ProgressBar-caption{
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: -8px;
+    position: absolute;
+    right: 30px;
+    text-align: right;
+    top: 50%;
+    width: 200px;
+    &:hover{
+      color: $primaryColor;
+    }
+  }
+    .ProgressBar-caption--active{ color: $primaryColor }
+
+</style>
+	
+
+<script>
+
+$(document).ready(function() {
+  
+  var html;
+  var total = $(".js-Content .js-Content-text").length;
+  
+  $(document).on('click', '.js-ProgressBar-caption', function(e){
+    $.scrollTo( "#" + $(this).data('scroll'),{ duration : 1000} );
+    e.preventDefault();
+  })
+  
+  
+  $(".js-Content-title").each(function(i){
+    console.log(i);
+    html  = '<div class="ProgressBar-bar js-ProgressBar-bar">';
+    html += '<a href="#" data-scroll="' + $(this).data('id') + '" class="ProgressBar-caption js-ProgressBar-caption">' + $(this).text() + '</a>';
+    html += '<span class="ProgressBar-avancement js-ProgressBar-avancement"></span>';
+    html += '<span class="ProgressBar-circle js-ProgressBar-circle"></span>';
+    html += '</div>';
+
+    $('.js-ProgressBar-wrapper').append(html);
+  })
+    
+  $(window).scroll(function (){
+    
+    var wrapper_height = $(".js-ProgressBar-bar").outerHeight();
+    var top = $(this).scrollTop();
+    var bottom = top + $(window).height();
+    
+    if( $('.js-Content').offset().top - top <= 10){
+      $('.js-ProgressBar').css({position : 'fixed', top : '25px'})
+    }else{
+      $('.js-ProgressBar').css({position : 'absolute', top : '147px'})
+    }
+    
+    $(".js-Content .js-Content-text").each(function(i){
+      var this_top = $(this).offset().top;
+      var height = $(this).outerHeight();
+      var this_bottom = this_top + height;
+      var percent = 0;
+
+      if (top >= this_top && top <= this_bottom){
+        percent = ( (top - this_top) / (height - wrapper_height) ) * 100;
+      }else if (top > this_bottom) {
+        percent = 100;
+        $(".js-ProgressBar-bar:eq("+i+") .js-ProgressBar-avancement").css("height", percent + "%");
+      }
+      console.log(this_bottom)
+      console.log(bottom)
+      if( i == total - 1 && Math.round(this_bottom) <= Math.round(bottom) ){ percent = 100; }
+      
+      $(".js-ProgressBar-bar:eq("+i+") .js-ProgressBar-avancement").css("height", percent + "%");
+      
+      if( percent > 0){
+          $(".js-ProgressBar-bar:eq("+i+") .js-ProgressBar-circle").addClass('ProgressBar-circle--active');
+          $(".js-ProgressBar-bar:eq("+i+") .js-ProgressBar-avancement").addClass('ProgressBar-avancement--active');
+          $(".js-ProgressBar-bar:eq("+i+") .js-ProgressBar-caption").addClass('ProgressBar-caption--active');
+      }else{
+          $(".js-ProgressBar-bar:eq("+i+") .js-ProgressBar-circle").removeClass('ProgressBar-circle--active');
+          $(".js-ProgressBar-bar:eq("+i+") .js-ProgressBar-avancement").removeClass('ProgressBar-avancement--active');
+          $(".js-ProgressBar-bar:eq("+i+") .js-ProgressBar-caption").removeClass('ProgressBar-caption--active');
+      }
+      
+    })
+  
+  })
+  
+})
+
+</script>
+
+
+
+</head>
+<body>
+
+<div class="Content js-Content">
+  
+  <div class="ProgressBar js-ProgressBar">
+    <div class="ProgressBar-wrapper js-ProgressBar-wrapper">
+    </div>
+  </div>
+  
+  <div class="Content-text js-Content-text">
+    <h2 class="Content-title js-Content-title" data-id="1" id="1">About Us</h2>
+    <p>abcd</p>
+    
+  </div>
+  <div class="Content-text js-Content-text">
+    <h2 class="Content-title js-Content-title" data-id="2" id="2">Contact Us</h2>
+    <p>efgh</p>
+    
+  </div>
+  <div class="Content-text js-Content-text">
+    <h2 class="Content-title js-Content-title" data-id="3" id="3">Gallery</h2>
+    <p>ijkl</p>
+  </div><div class="Content-text js-Content-text">
+    <h2 class="Content-title js-Content-title" data-id="4" id="4">Sponsors</h2>
+    <p>mnop</p>
+  </div>
+</div>
+
+</body>
+</html>
