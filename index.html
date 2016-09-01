@@ -1,18 +1,117 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<title>Saarang | 2017</title>
-	<!-- CSS links -->
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<!-- js links -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="js/jquery-3.1.0.min.js"></script>
-	<script src="js/angular.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Saarang 2017</title>
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<!-- Link to css files -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<style type="text/css">
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+	    background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: center center;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+/*	#section0{
+		background-image: url(imgs/landing.jpg);
+	}
+	#section1{
+		background-image: url(imgs/aboutus.jpg);
+	}
+	#section2{
+		background-image: url(imgs/gallery.jpg);
+	}
+	#section3{
+		background-image: url(imgs/spons.jpg);
+	}
+	#section4{
+		background-image: url(imgs/contact_us.jpg);
+	}
+
+*/	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				afterLoad: function(anchorLink, index){
+					//For about us page
+					if(index == 2){
+						$('#section1').find('img').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+
+						$('#section1').find('p').first().fadeIn(1800, function(){
+							$('#section1').find('p').last().fadeIn(1800);
+						});;
+					}
+					//For gallery page
+					if(index == 3){
+						$('#section2').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+					//For spons page
+					if(index == 4){
+						$('#section3').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+					//For contact us page
+					if(index == 5){
+						$('#section4').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+				}
+			});
+
+		});
+	</script>
 </head>
 <body>
 
-	<h1>Landing page for Saaarang 2017</h1>
+<div id="fullpage">
+	<div class="section " id="section0">
+		<span style="font-size:5em;font-family:endor;color:#bd5959;">S A A R A N G</span>
+	</div>
+	<div class="section" id="section1">
+
+	</div>
+	<div class="section" id="section2">
+
+	</div>
+	<div class="section" id="section3">
+
+	</div>
+	<div class="section" id="section4">
+
+	</div>
+</div>
+
 
 </body>
-
 </html>
