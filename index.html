@@ -3,19 +3,19 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Saarang 2017</title>
 
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<!--<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />-->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
+	<!--<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>-->
 	<script type="text/javascript" src="js/angular.min.js"></script>
-	<!--<script type="text/javascript" src="js/parallax.js"></script>-->
-    <!--<script type="text/javascript" src="js/parallax.min.js"></script>-->
-    <!--<script type="text/javascript" src="js/jquery.parallax.js"></script>-->
-    <!--<script type="text/javascript" src="js/jquery.parallax.min.js"></script>-->
+	<script src="js/parallax/deploy/parallax.js"></script>
+    <script src="js/parallax/deploy/parallax.min.js"></script>
+    <script src="js/parallax/deploy/jquery.parallax.js"></script>
+    <script src="js/parallax/deploy/jquery.parallax.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<!-- Link to css files -->
@@ -24,12 +24,12 @@
 	<style type="text/css">
 
 	/* Centered texts in each section
-	* --------------------------------------- */
+	* --------------------------------------- 
 	.section{
 		text-align:center;
 	}
 	/* Backgrounds will cover all the section
-	* --------------------------------------- */
+	* ---------------------------------------*/ 
 	.section{
 	    background-size: cover;
     	background-repeat: no-repeat;
@@ -77,7 +77,7 @@
 
 */	</style>
 	<script type="text/javascript">
-		$(document).ready(function() {
+		/**$(document).ready(function() {
 			$('#fullpage').fullpage({
 				afterLoad: function(anchorLink, index){
 					//For about us page
@@ -111,14 +111,15 @@
 				}
 			});
 
-		});
+		});**/
+      
 
 	</script>
-</head>
+</head> 
 <body>
 
 <div id="fullpage">
-	<div class="section " id="section0">
+  <div class="section" id="section0">
 	<img class="home_images" src="imgs/new/1_page/sky_clouds.png">
 		<span class="landing_title">S A A R A N G</span>
 		<img style="z-index:599;" class="home_images" src="imgs/new/1_page/landing_page.png">
@@ -147,8 +148,8 @@
 	</div>
 	<div class="section" id="section4">
 
-	</div>
 </div>
+</div>	
 
 
 </body>
