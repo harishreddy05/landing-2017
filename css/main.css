@@ -4,7 +4,6 @@
 }
 
 #light1{
-	bottom:75px;
 	animation-name: parallax1;
 	animation-duration: 1.5s;
 	animation-iteration-count: infinite;
@@ -12,12 +11,11 @@
 }
 
 @keyframes parallax1{
-	from{left:0px;}
-	to{left:20px;}
+	from{left:10px;bottom:80px;}
+	to{left:20px;bottom:75px;}
 }
 
 #light2{
-	bottom:160px;
 	animation-name: parallax2;
 	animation-duration: 1.5s;
 	animation-iteration-count: infinite;
@@ -25,12 +23,11 @@
 }
 
 @keyframes parallax2{
-	from{left:120px;}
-	to{left:140px;}
+	from{left:120px;bottom:160px;}
+	to{left:130px;bottom:165px;}
 }
 
 #light3{
-	bottom:80px;
 	animation-name: parallax3;
 	animation-duration: 1.5s;
 	animation-iteration-count: infinite;
@@ -38,8 +35,8 @@
 }
 
 @keyframes parallax3{
-	from{left:140px;}
-	to{left:160px;}
+	from{left:140px;bottom:80px;}
+	to{left:150px;bottom:73px;}
 }
 
 #light4{
@@ -51,12 +48,11 @@
 }
 
 @keyframes parallax4{
-	from{right:180px;}
+	from{right:190px;}
 	to{right:200px;}
 }
 
 #light5{
-	bottom:120px;
 	animation-name: parallax5;
 	animation-duration: 1.75s;
 	animation-iteration-count: infinite;
@@ -64,8 +60,8 @@
 }
 
 @keyframes parallax5{
-	from{right:280px;}
-	to{right:300px;}
+	from{right:280px;bottom:120px;}
+	to{right:290px;bottom:127px;}
 }
 
 #light6{
@@ -78,7 +74,7 @@
 
 @keyframes parallax6{
 	from{left:260px;}
-	to{left:280px;}
+	to{left:270px;}
 }
 
 #light7{
@@ -91,7 +87,7 @@
 
 @keyframes parallax7{
 	from{left:340px;}
-	to{left:360px;}
+	to{left:350px;}
 }
 
 #light8{
@@ -103,7 +99,7 @@
 }
 
 @keyframes parallax8{
-	from{right:60px;}
+	from{right:70px;}
 	to{right:80px;}
 }
 
@@ -117,20 +113,19 @@
 
 @keyframes parallax9{
 	from{right:130px;}
-	to{right:150px;}
+	to{right:140px;}
 }
 
 #light10{
-	bottom:110px;
 	animation-name: parallax10;
-	animation-duration: 7s;
+	animation-duration: 9s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
 
 @keyframes parallax10{
-	from{left:500px;}
-	to{left:700px;}
+	from{left:500px;bottom:110px;}
+	to{left:700px;bottom:140px;}
 }
 
 #light11{
@@ -143,7 +138,7 @@
 
 @keyframes parallax11{
 	from{right:420px;}
-	to{right:440px;}
+	to{right:430px;}
 }
 
 #light12{
@@ -155,7 +150,7 @@
 }
 
 @keyframes parallax12{
-	from{left:380px;}
+	from{left:390px;}
 	to{left:400px;}
 }
 
@@ -169,5 +164,17 @@
 
 @keyframes parallax13{
 	from{right:290px;}
-	to{right:320px;}
+	to{right:305px;}
+}
+
+#tree:hover{
+	animation-name: parallax14;
+	animation-duration:2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax14{
+	from{left:0em;}
+	to{left:0.3em;}
 }
