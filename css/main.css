@@ -2,3 +2,172 @@
     font-family: endor;
     src: url(../fonts/ENDOR___.ttf);
 }
+
+#light1{
+	bottom:75px;
+	animation-name: parallax1;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax1{
+	from{left:0px;}
+	to{left:20px;}
+}
+
+#light2{
+	bottom:160px;
+	animation-name: parallax2;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax2{
+	from{left:120px;}
+	to{left:140px;}
+}
+
+#light3{
+	bottom:80px;
+	animation-name: parallax3;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax3{
+	from{left:140px;}
+	to{left:160px;}
+}
+
+#light4{
+	bottom:120px;
+	animation-name: parallax4;
+	animation-duration: 1.65s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax4{
+	from{right:180px;}
+	to{right:200px;}
+}
+
+#light5{
+	bottom:120px;
+	animation-name: parallax5;
+	animation-duration: 1.75s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax5{
+	from{right:280px;}
+	to{right:300px;}
+}
+
+#light6{
+	bottom:140px;
+	animation-name: parallax6;
+	animation-duration: 1.6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax6{
+	from{left:260px;}
+	to{left:280px;}
+}
+
+#light7{
+	bottom:240px;
+	animation-name: parallax7;
+	animation-duration: 1.55s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax7{
+	from{left:340px;}
+	to{left:360px;}
+}
+
+#light8{
+	bottom:100px;
+	animation-name: parallax8;
+	animation-duration: 1.54s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax8{
+	from{right:60px;}
+	to{right:80px;}
+}
+
+#light9{
+	bottom:215px;
+	animation-name: parallax9;
+	animation-duration: 1.78s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax9{
+	from{right:130px;}
+	to{right:150px;}
+}
+
+#light10{
+	bottom:110px;
+	animation-name: parallax10;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax10{
+	from{left:500px;}
+	to{left:700px;}
+}
+
+#light11{
+	bottom:70px;
+	animation-name: parallax11;
+	animation-duration: 1.75s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax11{
+	from{right:420px;}
+	to{right:440px;}
+}
+
+#light12{
+	bottom:90px;
+	animation-name: parallax12;
+	animation-duration: 1.8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax12{
+	from{left:380px;}
+	to{left:400px;}
+}
+
+#light13{
+	bottom:190px;
+	animation-name: parallax13;
+	animation-duration: 1.85s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax13{
+	from{right:290px;}
+	to{right:320px;}
+}

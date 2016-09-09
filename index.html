@@ -52,10 +52,12 @@
 	.home_images{
 		position:absolute;
 		top:0;
-		left:0;
 		width:100%;
-		height:110%;
+		height:100%;
       }
+    .light_images{
+    	position:absolute;
+    }  
 
 	/* Defining each section background and styles
 	* --------------------------------------- */
@@ -113,30 +115,55 @@
 			});
 
 		});**/
+	$('.scene').parallax();
+      $('.scene').parallax({
+        invertX: false,
+        invertY: false,
+        limitX: 60,
+        limitY: 60,
+        frictionX: 0.5,
+        frictionY: 0.5,
+      });	
       
 
 	</script>
 </head> 
 <body>
 
-  <div>
-     <div>
-	    <img class="home_images" src="imgs/new/1_page/sky_clouds.png">
-		<span class="landing_title">S A A R A N G</span>
-		<img style="z-index:599;" class="home_images" src="imgs/new/1_page/landing_page.png">
-		<img style="z-index:599;" class="home_images" src="imgs/new/1_page/tag_line.png">
-		<img style="z-index:499;" class="home_images" src="imgs/new/1_page/rock_tree.png">
-        <img style="z-index:399;" class="home_images" src="imgs/new/1_page/moon.png">
-        <img style="z-index:1099;" class="home_images" src="imgs/new/1_page/fairies_2.png">
-        <img style="z-index:1099;" class="home_images" src="imgs/new/1_page/fairies_1.png">
-        <img style="z-index:1199;" class="home_images" src="imgs/new/1_page/glow.png">
-        <img style="z-index:1099;" class="home_images" src="imgs/new/1_page/light.png">
-        <img style="z-index:599;" class="home_images" src="imgs/new/1_page/mist_1.png">
-        <img style="z-index:599;" class="home_images" src="imgs/new/1_page/mist_2.png">
-		<img style="z-index:699;" class="home_images" src="imgs/new/1_page/trees_1.png">
-		<img style="z-index:899;" class="home_images" src="imgs/new/1_page/trees_2.png">
-		<img style="z-index:999;" class="home_images" src="imgs/new/1_page/trees_3.png">
-		<img style="z-index:9999;" class="home_images" src="imgs/new/1_page/scroll_down.png">
+ <div>
+    <div>
+	  <img class="home_images" src="imgs/new/1_page/sky_clouds.png">
+	   <span class="landing_title">S A A R A N G</span>
+	  <img style="z-index:599;" class="home_images" src="imgs/new/1_page/landing_page.png">
+	  <img style="z-index:599;" class="home_images" src="imgs/new/1_page/tag_line.png">
+	  <img style="z-index:499;" class="home_images" src="imgs/new/1_page/rock_tree.png">
+      <img style="z-index:399;" class="home_images" src="imgs/new/1_page/moon.png">
+        <!--<img style="z-index:1099;" class="home_images" src="imgs/new/1_page/fairies_2.png">
+        <img style="z-index:1099;" class="home_images" src="imgs/new/1_page/fairies_1.png">-->
+     <img style="z-index:1199;" class="home_images" src="imgs/new/1_page/glow.png">
+     <img id="light1" style="z-index:1079;" class="light_images" src="imgs/new/1_page/light_modified.png">
+     <img id="light2" style="z-index:1089;" class="light_images" src="imgs/new/1_page/light_modified.png">
+     <img id="light3" style="z-index:1069;" class="light_images" src="imgs/new/1_page/light_modified.png">
+     <img id="light4" style="z-index:1059;" class="light_images" src="imgs/new/1_page/light_modified.png">
+     <img id="light5" style="z-index:1049;" class="light_images" src="imgs/new/1_page/light_modified.png">
+     <img id="light6" style="z-index:1039;" class="light_images" src="imgs/new/1_page/light_modified.png">
+     <img id="light7" style="z-index:1039;" class="light_images" src="imgs/new/1_page/light_modified.png">
+     <img id="light8" style="z-index:1019;" class="light_images" src="imgs/new/1_page/light_modified.png">
+     <img id="light9" style="z-index:1025;" class="light_images" src="imgs/new/1_page/light_modified.png">
+    <img id="light10" style="z-index:1074;" class="light_images" src="imgs/new/1_page/light_modified.png">
+    <img id="light11" style="z-index:1015;" class="light_images" src="imgs/new/1_page/light_modified.png">
+    <img id="light12" style="z-index:1021;" class="light_images" src="imgs/new/1_page/light_modified.png">
+    <img id="light13" style="z-index:1031;" class="light_images" src="imgs/new/1_page/light_modified.png">
+     <img style="z-index:599;" class="home_images" src="imgs/new/1_page/mist_1.png">
+     <img style="z-index:599;" class="home_images" src="imgs/new/1_page/mist_2.png">
+     <img style="z-index:699;" class="home_images" src="imgs/new/1_page/trees_1.png">
+	 <img style="z-index:899;" class="home_images" src="imgs/new/1_page/trees_2.png">
+	 <ul class="scene">
+      <li class="layer" data-depth="0.20">
+	   <img style="z-index:999;" class="home_images" src="imgs/new/1_page/trees_3.png">
+	  </li>
+	 </ul>
+	 <img style="z-index:9999;" class="home_images" src="imgs/new/1_page/scroll_down.png">
 	</div>
 	<div class="section" id="section1">
 
