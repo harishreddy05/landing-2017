@@ -1,0 +1,25 @@
+div.left {
+	width: 20%;
+	margin-left:5%;
+	font-size: 30px;
+	border-right : 5px solid black; 
+}
+
+img.circle{
+	margin-top: 1%;
+	margin-left:24%;
+	height:50px;
+}
+p.name{
+	font-weight: bold;
+}
+
+div.details{
+	padding-bottom: 80%;
+}
+
+div.text{
+	margin-right:10%; 
+	padding-top: 20%;
+	border-bottom: 2px solid black;
+}
