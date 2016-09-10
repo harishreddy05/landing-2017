@@ -47,7 +47,7 @@ div.text{
 }
 .contact #contact_title:after {
   content: '';
-  height: 100%;
+  height: 90%;
   width: 2px;
   position: absolute;
   right: 0;

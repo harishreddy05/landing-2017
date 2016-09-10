@@ -13,7 +13,7 @@
 }
 .gallery  #gallery_title{
 	position: relative;
-	top:2em;
+	top:1em;
 	height : 90vh;
 	/*border-right: 1px solid black;*/
 	position: relative;
@@ -29,7 +29,7 @@
   width: 2px;
   position: absolute;
   right: 0;
-  bottom: 0em; 
+  bottom: 2em; 
   background-color: #000000;
 }
 .gallery  .page_title{
