@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			background-color: #f8f9ff;
+		}
+		.about{
+			margin: 1vh;
+		}
+		#tree_img, #pic_img{
+			position: relative;
+			height: 70vh;
+		}
+		#tree_img img{
+			position: absolute;
+			bottom: 5vh;
+		}
+		#pic_img img{
+			position: absolute;
+			bottom: 2vh;
+		}
+		.img_border{
+			position: absolute;
+			bottom: 4vh;
+			left: 4vh;
+			z-index: 1;
+			height: 60vh;
+			border: 5px solid #ff00ba;
+			width: 90vh;
+		}
+		div{
+		}
+		#title{
+			height : 98vh;
+			border-right: 1px solid black
+		}
+		#text{
+			text-align: justify;
+			text-align-last: right;
+			-moz-text-align-last: right;
+		}
+		.page_title{
+			-ms-transform: rotate(-90deg); /* IE 9 */
+    		-ms-transform-origin: 100% 100%; /* IE 9 */
+    		-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    		-webkit-transform-origin: 100% 100%; /* Chrome, Safari, Opera */
+    		transform: rotate(-90deg);
+    		transform-origin: 100% 100%;
+			font-size: 7em;
+			font-weight: 700;
+		}
+	</style>
+</head>
+<body>
+	<div class="about">
+		<div class="col-xs-3" id="title">
+			<div class="page_title">
+				ABOUT US
+			</div>
+		</div>
+		<div class="col-sm-9">
+			<div class="row" id="images">
+				<div class="col-sm-4" id="tree_img">
+					<img src="imgs/new/About_us/tree_new.png" style="height:40vh;">
+				</div>
+				<div class="col-sm-8" id="pic_img">
+					<div class="img_border"></div>
+					<img src="imgs/new/About_us/picture_new.png" style="height: 60vh; width:90vh;">
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-xs-12" id="text">
+				<span style="float:right" class="col-xs-11">
+					Embarking on a humble yet fruitful journey, Saarang, called Mardi Gras when it was started in the mid-1970s, has
+					gone on to become an integral part of the culture of Chennai. A pioneering student fest of the Indian Institute Of
+					Technology Madras, it attracts over fifty thousand people from across the country every year and has been host to breath taking performances from personalities within country and from all over the world. Saarang has
+					showcased the performances of Ustad Bismillah Khan, Hariprasad Chaurasia, Pandit Birju Maharaj, Sunidhi Chauhan,
+					Sonu Nigam over the years.
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
