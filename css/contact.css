@@ -23,7 +23,9 @@ div.text{
 	padding-top: 20%;
 	border-bottom: 2px solid black;
 }*/
-
+.contact{
+	background-color: #f8f9ff;
+}
 .contact .img_border{
 	position: absolute;
 	bottom: 5%;
@@ -49,7 +51,7 @@ div.text{
   width: 2px;
   position: absolute;
   right: 0;
-  bottom: 1em; 
+  bottom: 0em; 
 
   background-color: #000000;
 }

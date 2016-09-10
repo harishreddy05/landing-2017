@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="contact.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script src="js/angular.min.js"></script>
 	<script src="js/app.js"></script>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 
 	<title>Contact Page</title>
+
+	<script type="text/javascript">
+		$('.scene').parallax();
+	      $('.scene').parallax({
+	        invertX: false,
+	        invertY: false,
+	        limitX: 60,
+	        limitY: 60,
+	        frictionX: 0.5,
+	        frictionY: 0.5,
+	      });	
+	</script>
 </head>
 <body style="background-color: #f8f9ff;" ng-app="myApp" ng-controller="myCtrl">
-	<div class="about section" style="height:100vh">
+	<div class="section home">
+		<img class="home_images" src="imgs/new/1_page/sky_clouds.png">
+		<span class="landing_title">S A A R A N G</span>
+		<!-- <img style="z-index:599;" class="home_images" src="imgs/new/1_page/landing_page.png"> -->
+		<!-- <img style="z-index:599;" class="home_images" src="imgs/new/1_page/tag_line.png"> -->
+		<span class="tag_line">BEYOND HEAVEN'S GATE</span>
+		<img style="z-index:499;top:17em;right:42%;height:70%;width:34%" class="home_images" src="imgs/new/1_page/rock_tree_cut.png">
+	    <img style="z-index:399;top:5em;right:34%;height:70%;width:34%" class="home_images" src="imgs/new/1_page/moon_cut.png">
+	    <!--<img style="z-index:1099;" class="home_images" src="imgs/new/1_page/fairies_2.png">
+	    <img style="z-index:1099;" class="home_images" src="imgs/new/1_page/fairies_1.png">-->
+	    <img style="z-index:1199;" class="home_images" src="imgs/new/1_page/glow.png">
+	    <img id="light1" style="z-index:1079;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light2" style="z-index:1089;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light3" style="z-index:1069;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light4" style="z-index:1059;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light5" style="z-index:1049;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light6" style="z-index:1039;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light7" style="z-index:1039;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light8" style="z-index:1019;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light9" style="z-index:1025;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light10" style="z-index:1074;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light11" style="z-index:1015;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light12" style="z-index:1021;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light13" style="z-index:1031;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light14" style="z-index:1033;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img style="z-index:599;" class="home_images" src="imgs/new/1_page/mist_1.png">
+	    <img style="z-index:599;" class="home_images" src="imgs/new/1_page/mist_2.png">
+	    <img style="z-index:699;top:75vh;height:25%;width:100%" class="home_images" src="imgs/new/1_page/trees_1_cut.png">
+		<img style="z-index:899;top:75vh;height:25%;width:100%" class="home_images" src="imgs/new/1_page/trees_2_cut.png">
+		<img id="tree" style="z-index:999;top:75vh;height:25%;width:100%" class="home_images" src="imgs/new/1_page/trees_3_cut.png">
+		<img style="z-index:9999;top:95vh;left:10%;height:3%;width:80%" class="home_images" src="imgs/new/1_page/scroll_down_cut.png">
+	</div>
+	<!-- About_us -->
+	<div class="about section" style="margin-top:52%;height:100vh">
 		<span class="cloud01">
 			<img src="imgs/new/About_us/clouds/01_new.png">
 		</span>
