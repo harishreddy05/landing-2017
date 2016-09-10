@@ -11,8 +11,8 @@
 }
 
 @keyframes parallax1{
-	from{left:10px;bottom:80px;}
-	to{left:20px;bottom:75px;}
+	from{left:0.625em;bottom:6em;}
+	to{left:1.25em;bottom:5.688em;}
 }
 
 #light2{
@@ -23,8 +23,8 @@
 }
 
 @keyframes parallax2{
-	from{left:120px;bottom:160px;}
-	to{left:130px;bottom:165px;}
+	from{left:7.5em;bottom:10em;}
+	to{left:8.125em;bottom:10.313em;}
 }
 
 #light3{
@@ -35,12 +35,12 @@
 }
 
 @keyframes parallax3{
-	from{left:140px;bottom:80px;}
-	to{left:150px;bottom:73px;}
+	from{left:8.75em;bottom:6em;}
+	to{left:9.375em;bottom:5.563em;}
 }
 
 #light4{
-	bottom:120px;
+	bottom:9.5em;
 	animation-name: parallax4;
 	animation-duration: 1.65s;
 	animation-iteration-count: infinite;
@@ -48,8 +48,8 @@
 }
 
 @keyframes parallax4{
-	from{right:190px;}
-	to{right:200px;}
+	from{right:12.875em;}
+	to{right:13.5em;}
 }
 
 #light5{
@@ -60,12 +60,12 @@
 }
 
 @keyframes parallax5{
-	from{right:280px;bottom:120px;}
-	to{right:290px;bottom:127px;}
+	from{right:17.5em;bottom:7.5em;}
+	to{right:18.125em;bottom:7.938em;}
 }
 
 #light6{
-	bottom:140px;
+	bottom:8.75em;
 	animation-name: parallax6;
 	animation-duration: 1.6s;
 	animation-iteration-count: infinite;
@@ -73,12 +73,12 @@
 }
 
 @keyframes parallax6{
-	from{left:260px;}
-	to{left:270px;}
+	from{left:16.25em;}
+	to{left:16.875em;}
 }
 
 #light7{
-	bottom:240px;
+	bottom:15em;
 	animation-name: parallax7;
 	animation-duration: 1.55s;
 	animation-iteration-count: infinite;
@@ -86,12 +86,12 @@
 }
 
 @keyframes parallax7{
-	from{left:340px;}
-	to{left:350px;}
+	from{left:21.25em;}
+	to{left:21.875em;}
 }
 
 #light8{
-	bottom:100px;
+	bottom:8.25em;
 	animation-name: parallax8;
 	animation-duration: 1.54s;
 	animation-iteration-count: infinite;
@@ -99,12 +99,12 @@
 }
 
 @keyframes parallax8{
-	from{right:70px;}
-	to{right:80px;}
+	from{right:5.375em;}
+	to{right:6em;}
 }
 
 #light9{
-	bottom:215px;
+	bottom:13.438em;
 	animation-name: parallax9;
 	animation-duration: 1.78s;
 	animation-iteration-count: infinite;
@@ -112,8 +112,8 @@
 }
 
 @keyframes parallax9{
-	from{right:130px;}
-	to{right:140px;}
+	from{right:8.125em;}
+	to{right:8.750em;}
 }
 
 #light10{
@@ -124,12 +124,12 @@
 }
 
 @keyframes parallax10{
-	from{left:500px;bottom:110px;}
-	to{left:700px;bottom:140px;}
+	from{left:31.25em;bottom:6.875em;}
+	to{left:43.75em;bottom:8.75em;}
 }
 
 #light11{
-	bottom:70px;
+	bottom:8.375em;
 	animation-name: parallax11;
 	animation-duration: 1.75s;
 	animation-iteration-count: infinite;
@@ -137,12 +137,12 @@
 }
 
 @keyframes parallax11{
-	from{right:420px;}
-	to{right:430px;}
+	from{right:26em;}
+	to{right:26.875em;}
 }
 
 #light12{
-	bottom:90px;
+	bottom:6.625em;
 	animation-name: parallax12;
 	animation-duration: 1.8s;
 	animation-iteration-count: infinite;
@@ -150,12 +150,12 @@
 }
 
 @keyframes parallax12{
-	from{left:390px;}
-	to{left:400px;}
+	from{left:24.375em;}
+	to{left:25em;}
 }
 
 #light13{
-	bottom:190px;
+	bottom:11.875em;
 	animation-name: parallax13;
 	animation-duration: 1.85s;
 	animation-iteration-count: infinite;
@@ -163,11 +163,24 @@
 }
 
 @keyframes parallax13{
-	from{right:290px;}
-	to{right:305px;}
+	from{right:23.125em;}
+	to{right:24.063em;}
 }
 
-#tree:hover{
+#light14{
+	bottom:10.875em;
+	animation-name: parallax14;
+	animation-duration: 1.76s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes parallax14{
+	from{right:2.125em;}
+	to{right:3.063em;}
+}
+
+/*#tree:hover{
 	animation-name: parallax14;
 	animation-duration:2s;
 	animation-iteration-count: infinite;
@@ -177,4 +190,4 @@
 @keyframes parallax14{
 	from{left:0em;}
 	to{left:0.3em;}
-}
+}*/
