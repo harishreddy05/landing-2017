@@ -1,8 +1,7 @@
 'use strict';
 
 var app = angular.module("myApp", []); 
-app.controller("myCtrl", function($scope) {
-  $scope.hello = "hello";
+app.controller("contactCtrl", function($scope) {
   $scope.secretaries2017 = [
               {
                   "title": "Secretary, Cultural Affairs (Arts)",
@@ -246,3 +245,49 @@ app.controller("myCtrl", function($scope) {
                 ]
               }]; 
   });
+app.controller("sponsCtrl",function ($scope,$http) {
+
+  $http.get('http://erp.saarang.org/api/mobile/display_spons/').success(function(data){
+            var groupeddata=data.data.slice(0);
+            var mixeddata=[];
+            var mix=[];
+            var temp;
+            var k=0;
+            for(var i=1;i<groupeddata.length;i++)
+              {
+                for(var j=0;j<groupeddata.length-i;j++)
+                {
+                  if(groupeddata[j].priority<groupeddata[j+1].priority)
+                  {
+                    temp=groupeddata[j+1];
+                    groupeddata[j+1]=groupeddata[j];
+                    groupeddata[j]=temp;
+                  }
+                }
+              }
+            for(var i=0;i<groupeddata.length;i++)
+              {
+                k=0;
+                mix.push(groupeddata[i]);
+                j=i;'http://erp.saarang.org/api/mobile/display_spons/'
+                if(j!=groupeddata.length-1)
+                {
+                while(groupeddata[j].row_layout==groupeddata[j+1].row_layout && k<(groupeddata[i].row_layout-1))
+                  {
+                    mix.push(groupeddata[j+1]);
+                    k++;
+                    j++;
+                    i=j;
+                    if(j==groupeddata.length-1)
+                      break;
+                  }
+                }
+                mixeddata.push(mix);
+                mix=[];
+              }
+            $scope.logos = mixeddata;
+          }).error(function(error){
+            toastr.error("Error", "Please reload the page!");
+          });
+
+});
