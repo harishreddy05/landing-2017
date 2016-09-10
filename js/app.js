@@ -269,7 +269,7 @@ app.controller("sponsCtrl",function ($scope,$http) {
               {
                 k=0;
                 mix.push(groupeddata[i]);
-                j=i;'http://erp.saarang.org/api/mobile/display_spons/'
+                j=i;
                 if(j!=groupeddata.length-1)
                 {
                 while(groupeddata[j].row_layout==groupeddata[j+1].row_layout && k<(groupeddata[i].row_layout-1))
@@ -287,7 +287,7 @@ app.controller("sponsCtrl",function ($scope,$http) {
               }
             $scope.logos = mixeddata;
           }).error(function(error){
-            toastr.error("Error", "Please reload the page!");
+            console.log(error)
           });
 
 });
