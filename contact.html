@@ -3,61 +3,125 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="contact.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script src="js/angular.min.js"></script>
 	<script src="js/app.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+
 	<title>Contact Page</title>
 </head>
-<body ng-app="myApp" ng-controller="myCtrl">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<div>
-					<div class="text">
-						<h2>CONTACT US</h2>
-					</div>
-					<div class="details">
-						<p class="name">XYZ</p>
-						<p>9123456789</p>
-						<p class="name">XYZ</p>
-						<p>9123456789</p>
-					</div>
-				</div>			
+<body style="background-color: #f8f9ff;" ng-app="myApp" ng-controller="myCtrl">
+	<div class="about section" style="height:100vh">
+		<span class="cloud01">
+			<img src="imgs/new/About_us/clouds/01_new.png">
+		</span>
+		<span class="cloud02">
+			<img src="imgs/new/About_us/clouds/02_new.png">
+		</span>
+		<span class="cloud03">
+			<img src="imgs/new/About_us/clouds/03_new.png" style="width:80%;">
+		</span>
+		<span class="cloud04">
+			<img src="imgs/new/About_us/clouds/04_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud05">
+			<img src="imgs/new/About_us/clouds/05_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud06">
+			<img src="imgs/new/About_us/clouds/06_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud07">
+			<img src="imgs/new/About_us/clouds/07_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud08">
+			<img src="imgs/new/About_us/clouds/08_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud09">
+			<img src="imgs/new/About_us/clouds/09_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud10">
+			<img src="imgs/new/About_us/clouds/10_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud11">
+			<img src="imgs/new/About_us/clouds/11_new.png" style="width: 60%;">
+		</span>
+		<div class="col-xs-2" id="title">
+			<div class="page_title">
+				ABOUT&nbsp;US
 			</div>
-			<div class="col-md-9">
-				<div class="row">
-			        <div class="col-lg-12 help-text">
-				        <h4>For any queries/feedback on the website/online services, please contact us at 
-				        	<a href="mailto:webops@saarang.org" target="_blank">webops@saarang.org</a>
-			        	</h4>
-			            <h2><b>Saarang 2017 Team</b></h2>
-			        </div>
-			    </div>
+		</div>
+		<div class="col-xs-10">
+			<div class="row" id="images">
+				<div class="col-xs-4" id="tree_img">
+					<img src="imgs/new/About_us/tree_new.png" style="height:60%;">
+				</div>
+				<div class="col-xs-8" id="pic_img">
+					<div class="img_border"></div>
+					<img src="imgs/new/About_us/picture_new.png" style="height: 85%; width:80%;">
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-xs-11" id="text">
+				<span style="float:right" class="col-xs-11">
+					Embarking on a humble yet fruitful journey, Saarang, called Mardi Gras when it was started in the mid-1970s, has
+					gone on to become an integral part of the culture of Chennai. A pioneering student fest of the Indian Institute Of
+					Technology Madras, it attracts over fifty thousand people from across the country every year and has been host to breath taking performances from personalities within country and from all over the world. Saarang has
+					showcased the performances of Ustad Bismillah Khan, Hariprasad Chaurasia, Pandit Birju Maharaj, Sunidhi Chauhan,
+					Sonu Nigam over the years.
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="section contact">
+		<div class="col-xs-2" id="contact_title">
+			<div class="page_title">
+				CONTACT&nbsp;US
+			</div>
+		</div>
+		<div class="col-xs-10">
+			<div class="row">
+		        <div class="col-lg-12 help-text">
+		            <h2 class="text-center"><b>Saarang 2017 Team</b></h2>
+		        </div>
+		    </div>
+		    <div style="height:80vh;overflow-y:scroll;overflow-x:hidden">
 			    <div ng-repeat="tab in contacts2017" id="{{tab.name}}">
 			        <div ng-show="$index===0" class="row">
 			            <div class="col-md-6" ng-repeat="secretary in secretaries2017">
-							<h3 class="sec-dept">{{secretary.title}}</h3>
-			                
-							<!-- <img width="196px" ng-src="../deploy/img/core_pics/{{secretary.img}}" class="img-responsive corePic"/> -->
-							<span>{{secretary.name}}</span><br>
-			                <span><a href="mailto:{{secretary.email}}" target="_blank">{{secretary.email}}</a></span><br>
-							<span>{{secretary.phone}}</span>
+							<h3 class="sec-dept text-center">{{secretary.title}}</h3>
+							<img width="196px" ng-src="imgs/core_pics/{{secretary.img}}" class="img-responsive corePic"/>
+							<div class="text-center">
+								<span>{{secretary.name}}</span><br>
+				                <span><a href="mailto:{{secretary.email}}" target="_blank">{{secretary.email}}</a></span><br>
+								<span>{{secretary.phone}}</span>
+							</div>
 			            </div>
 			        </div>
-
-					<div  ng-hide="$index===0||$index===1" class="row department" >
+					<div  ng-hide="$index===0||$index===1" class="row department">
 						<div class="col-md-6 col-md-offset-3">
 							<h3>{{tab.name}}</h3>
 						</div>
 					</div>
 					<div  ng-hide="$index===0||$index===1" class="row photos">
-						<div ng-class="{'col-md-2' : true,'col-md-offset-5':{{tab.members.length===1}}, 'col-md-offset-4':{{tab.members.length===2}} && {{$index===0}}, 'col-md-offset-3':{{tab.members.length===3}} && {{$index===0}}}" ng-repeat="member in tab.members">	
-							<!-- <img ng-src="../deploy/img/core_pics/{{member.img}}" class="img-responsive corePic"/> -->
-							<span>{{member.name}}</span><br>
-			                <span><a href="mailto:{{member.email}}" target="_blank">{{member.email}}</a></span><br>
-							<span>{{member.phone}}</span>
+						<div ng-class="{'col-md-4' : true,'col-md-offset-4':{{tab.members.length===1}}, 'col-md-offset-2':{{tab.members.length===2}} && {{$index===0}}, 'col-md-offset-0':{{tab.members.length===3}} && {{$index===0}}}" ng-repeat="member in tab.members">	
+							<img ng-src="imgs/core_pics/{{member.img}}" class="img-responsive corePic"/>
+							<div class="text-center">
+								<span class="center">{{member.name}}</span><br>
+				                <span><a href="mailto:{{member.email}}" target="_blank">{{member.email}}</a></span><br>
+								<span>{{member.phone}}</span>
+							</div>
 						</div>
 					</div>	
 				</div>		
+		    </div>
+			<div class="row">
+		        <h5 class="text-center">For any queries/feedback on the website/online services, please contact us at 
+		        	<a href="mailto:webops@saarang.org" target="_blank">webops@saarang.org</a>
+		    	</h5>
 			</div>
 		</div>
 	</div>

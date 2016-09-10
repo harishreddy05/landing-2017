@@ -1,8 +1,6 @@
 body{
 			background-color: #f8f9ff;
 		}
-		body{
-		}
 		#tree_img, #pic_img{
 			position: relative;
 			height: 70vh;
@@ -14,7 +12,7 @@ body{
 		}
 		.img_border{
 			position: absolute;
-			bottom: 5%;
+			bottom: 6%;
 			left: 4%;
 			z-index: 1;
 			height: 85%;
@@ -25,11 +23,10 @@ body{
 			position: absolute;
 			bottom: 3%;
 		}
-		div{
-		}
 		#title{
 			position: relative;
-			height : 98vh;
+			top:2em;
+			height : 90vh;
 			/*border-right: 1px solid black;*/
 			position: relative;
 		}
@@ -40,13 +37,11 @@ body{
 		}
 		#title:after {
 		  content: '';
-		  height: 90%;
+		  height: 95%;
 		  width: 2px;
-
 		  position: absolute;
 		  right: 0;
-		  bottom: 0; 
-
+		  bottom: 0em; 
 		  background-color: #000000;
 		}
 		.page_title{

@@ -64,7 +64,7 @@ app.controller("myCtrl", function($scope) {
                 {
                   "name": "Ferril",
                   "email": "ferril@saarang.org",
-                  "phone": "++919789855067",
+                  "phone": "+919789855067",
                   "img"  :"ferril.png"
                 },
                 {

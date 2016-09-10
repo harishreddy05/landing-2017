@@ -1,4 +1,4 @@
-div.left {
+/*div.left {
 	width: 20%;
 	margin-left:5%;
 	font-size: 30px;
@@ -22,4 +22,75 @@ div.text{
 	margin-right:10%; 
 	padding-top: 20%;
 	border-bottom: 2px solid black;
+}*/
+
+.contact .img_border{
+	position: absolute;
+	bottom: 5%;
+	left: 4%;
+	z-index: 1;
+	height: 85%;
+	width:80%;
+	border: 5px solid #b9a3cc;
 }
+.contact #contact_title{
+	position: relative;
+	top:1em;
+	height : 90vh;
+}
+.contact #text{
+	text-align: justify;
+	text-align-last: right;
+	-moz-text-align-last: right;
+}
+.contact #contact_title:after {
+  content: '';
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  right: 0;
+  bottom: 1em; 
+
+  background-color: #000000;
+}
+.contact .page_title{
+	position: absolute;
+	bottom: 5%;
+	right: 0;
+	-ms-transform: rotate(-90deg) translateX(100%); 
+	-ms-transform-origin: 102% 110%;
+	-webkit-transform: rotate(-90deg) translateX(100%);
+	-webkit-transform-origin: 102% 110%;
+	transform: rotate(-90deg) translateX(100%);
+	transform-origin: 102% 110%;
+	font-size: 6em;
+	font-weight: 800;
+}
+.contact span {
+	text-align: center;
+}
+.contact .department {
+	text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.contact .photos > img {
+  margin: auto;
+}
+.contact .corePic {
+  margin: auto;
+  width: 196px;
+}
+.contact #scroll {
+  height: 100%;
+  overflow-y: scroll;
+}
+/*.help-text {
+  color: white;
+  font-family: "Bariol";
+}
+.sec-dept {
+  color: white;
+  font-family: "Molot";
+}
+*/
