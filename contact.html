@@ -2,20 +2,64 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
 	<title>Contact Page</title>
 </head>
-<body>
-	<div class="left">
-		<div class="text">
-			<h2>CONTACT US</h2>
-		</div>
-		<div class="details">
-			<p class="name">XYZ</p>
-			<p>9123456789</p>
-			<p class="name">XYZ</p>
-			<p>9123456789</p>
+<body ng-app="myApp" ng-controller="myCtrl">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div>
+					<div class="text">
+						<h2>CONTACT US</h2>
+					</div>
+					<div class="details">
+						<p class="name">XYZ</p>
+						<p>9123456789</p>
+						<p class="name">XYZ</p>
+						<p>9123456789</p>
+					</div>
+				</div>			
+			</div>
+			<div class="col-md-9">
+				<div class="row">
+			        <div class="col-lg-12 help-text">
+				        <h4>For any queries/feedback on the website/online services, please contact us at 
+				        	<a href="mailto:webops@saarang.org" target="_blank">webops@saarang.org</a>
+			        	</h4>
+			            <h2><b>Saarang 2017 Team</b></h2>
+			        </div>
+			    </div>
+			    <div ng-repeat="tab in contacts2017" id="{{tab.name}}">
+			        <div ng-show="$index===0" class="row">
+			            <div class="col-md-6" ng-repeat="secretary in secretaries2017">
+							<h3 class="sec-dept">{{secretary.title}}</h3>
+			                
+							<!-- <img width="196px" ng-src="../deploy/img/core_pics/{{secretary.img}}" class="img-responsive corePic"/> -->
+							<span>{{secretary.name}}</span><br>
+			                <span><a href="mailto:{{secretary.email}}" target="_blank">{{secretary.email}}</a></span><br>
+							<span>{{secretary.phone}}</span>
+			            </div>
+			        </div>
+
+					<div  ng-hide="$index===0||$index===1" class="row department" >
+						<div class="col-md-6 col-md-offset-3">
+							<h3>{{tab.name}}</h3>
+						</div>
+					</div>
+					<div  ng-hide="$index===0||$index===1" class="row photos">
+						<div ng-class="{'col-md-2' : true,'col-md-offset-5':{{tab.members.length===1}}, 'col-md-offset-4':{{tab.members.length===2}} && {{$index===0}}, 'col-md-offset-3':{{tab.members.length===3}} && {{$index===0}}}" ng-repeat="member in tab.members">	
+							<!-- <img ng-src="../deploy/img/core_pics/{{member.img}}" class="img-responsive corePic"/> -->
+							<span>{{member.name}}</span><br>
+			                <span><a href="mailto:{{member.email}}" target="_blank">{{member.email}}</a></span><br>
+							<span>{{member.phone}}</span>
+						</div>
+					</div>	
+				</div>		
+			</div>
 		</div>
 	</div>
-	<img src="imgs/circle.jpg" class="circle">
 </body>
 </html>
