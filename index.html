@@ -2,9 +2,10 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/angular.min.js"></script>
+
 	<script src="js/app.js"></script>
 
 	<link rel="icon" type="image/png" href="favicon.ico">
@@ -13,8 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/spons.css">
 	<link rel="stylesheet" type="text/css" href="css/gallery.css">
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
-
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<title>Saarang 2017</title>
 
@@ -98,12 +98,12 @@
 		<span class="cloud11">
 			<img style="margin-top:250%" src="imgs/new/About_us/clouds/11_new.png" style="width: 60%;">
 		</span>
-		<div class="col-xs-2" id="title">
+		<div class="col-xs-1" id="title">
 			<div class="page_title">
 				ABOUT&nbsp;US
 			</div>
 		</div>
-		<div class="col-xs-10">
+		<div class="col-xs-11">
 			<div class="row" id="images">
 				<div class="col-xs-4" id="tree_img">
 					<img src="imgs/new/About_us/tree_new.png" style="height:60%;">
@@ -128,12 +128,12 @@
 	</div>
 	<!-- Spons -->
 	<div class="section spons" ng-controller="sponsCtrl" style="margin-top:2%;height:110vh;overflow-x:hidden">
-		<div class="col-xs-2" id="spons_title">
+		<div class="col-xs-1" id="spons_title">
 			<div class="page_title">
 				SPONSORS
 			</div>
 		</div>
-		<div class="col-xs-10">
+		<div class="col-xs-11">
 			<div class="container-fluid">
 		    	<div class="row">
 		    		<div class="col-xs-6 left">
@@ -152,21 +152,6 @@
 						</a>
 		    		</div>
 		    	</div>
-			       <!--  <div class="row text-center">
-			            <div class="col-md-6">
-			                <p>Priy Ranjan<br>
-			                    <a class="sponsCoreMail" href="mailto:priy.ranjan@saarang.org">priy.ranjan@saarang.org</a><br>
-			                    +919043243399
-			                </p>
-			            </div>
-			            <div class="col-md-6">
-			                <p>Rajat Shringi<br>
-			                <a class="sponsCoreMail" href="mailto:rajat.shringi@saarang.org">rajat.shringi@saarang.org</a><br>
-			                +919003112313</p>
-			            </div>
-			        </div> -->
-			       <!--  <hr>
-			        <br> -->
 			    <div style="border:5px solid #8b66a8;height:85vh;overflow-y:scroll;overflow-x:hidden">
 				    <div class="row" ng-repeat="row in logos">
 			            <div ng-if="row.length===1">
@@ -215,49 +200,50 @@
 		</div>
 	</div>
 	<!-- Galery -->
-	<div class="section gallery">
-		<div class="col-xs-2" id="gallery_title">
+	<div class="section gallery" ng-controller="galleryCtrl">
+		<div class="col-xs-1" id="gallery_title">
 			<div class="page_title">
 				GALLERY
 			</div>
-			<img src="imgs/new/gallery/mushroom_cut.png" style="position:relative;top:20em;left:120%;height:50%;width:130%">
+			<img src="imgs/new/gallery/mushroom_cut.png" style="position:relative;top:20em;left:120%;height:50%;width:300%">
 		</div>
-		<div class="col-xs-10">
-			<div class="row">
-	    		<div class="col-xs-12 left">
+		<div class="col-xs-11" style="height:90vh;overflow-y:hidden;overflow-x:hidden">
+			<div class="row" style="letter-spacing:3px">
+				<div class="col-xs-6 left">
 	    			<h1 style="letter-spacing:3px">SAARANG memories...</h1>
 	    		</div>
-	    	</div>
-		    <div style="height:80vh;overflow-y:scroll;overflow-x:hidden">
-			    <div ng-repeat="tab in contacts2017" id="{{tab.name}}">
-			        <div ng-show="$index===0" class="row">
-			            <div class="col-md-6" ng-repeat="secretary in secretaries2017">
-							<h3 class="sec-dept text-center">{{secretary.title}}</h3>
-							<img width="196px" ng-src="imgs/core_pics/{{secretary.img}}" class="img-responsive corePic"/>
-							<div class="text-center">
-								<span>{{secretary.name}}</span><br>
-				                <span><a href="mailto:{{secretary.email}}" target="_blank">{{secretary.email}}</a></span><br>
-								<span>{{secretary.phone}}</span>
-							</div>
+			</div>
+			<div class="container" style="border:5px solid #8b66a8;height:85vh;overflow-y:scroll;overflow-x:hidden">
+			    <div id="main_area">
+			        <!-- Slider -->
+			        <div class="row">
+			            <div class="col-sm-6" id="slider-thumbs" style="height:100vh;overflow-y:scroll">
+			                <!-- Bottom switcher of slider -->
+			                <ul class="hide-bullets" ng-repeat="pic in pics">
+			                    <li class="col-sm-6">
+			                        <a class="thumbnail" ng-click="show($index)" id="carousel-selector-{{$index}}">
+			                            <img src="imgs/pics/{{pic}}">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul>
 			            </div>
+			            <div class="col-sm-6" style="overflow-x:hidden">
+			                <div class="col-xs-12" id="slider">
+			                    <!-- Top part of the slider -->
+			                    <div class="row">
+			                        <div class="col-sm-12">
+	                                    <div class="active item text-center">
+	                                        <img style="margin:2%;position:relative;height:120%" src="imgs/pics/{{selectedPic}}">
+                                        </div>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            <!--/Slider-->
 			        </div>
-					<div  ng-hide="$index===0||$index===1" class="row department">
-						<div class="col-md-6 col-md-offset-3">
-							<h3>{{tab.name}}</h3>
-						</div>
-					</div>
-					<div  ng-hide="$index===0||$index===1" class="row photos">
-						<div ng-class="{'col-md-4' : true,'col-md-offset-4':{{tab.members.length===1}}, 'col-md-offset-2':{{tab.members.length===2}} && {{$index===0}}, 'col-md-offset-0':{{tab.members.length===3}} && {{$index===0}}}" ng-repeat="member in tab.members">	
-							<img ng-src="imgs/core_pics/{{member.img}}" class="img-responsive corePic"/>
-							<div class="text-center">
-								<span class="center">{{member.name}}</span><br>
-				                <span><a href="mailto:{{member.email}}" target="_blank">{{member.email}}</a></span><br>
-								<span>{{member.phone}}</span>
-							</div>
-						</div>
-					</div>	
-				</div>		
-		    </div>
+			    </div>
+			</div>
 		</div>
 	</div>
 	<!-- Contact us -->
@@ -309,7 +295,22 @@
 		    	</h5>
 			</div>
 		</div>
-	</div>
-
+	</div>	
 </body>
+<style type="text/css">
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+	height:100%;
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+</style>
 </html>

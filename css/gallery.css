@@ -25,11 +25,11 @@
 }
 .gallery  #gallery_title:after {
   content: '';
-  height: 95%;
+  height: 90%;
   width: 2px;
   position: absolute;
   right: 0;
-  bottom: 2em; 
+  bottom: 1em; 
   background-color: #000000;
 }
 .gallery  .page_title{
