@@ -30,7 +30,7 @@
 	      });	
 	</script> -->
 </head>
-<body style="background-color: #f8f9ff;" ng-app="myApp">
+<body style="background-color: #f8f9ff;overflow-x:hidden" ng-app="myApp">
 	<div class="section home" style="height:100vh;overflow-y:hidden">
 		<img class="home_images" src="imgs/new/1_page/sky_clouds.png">
 		<span class="landing_title">S A A R A N G</span>
@@ -115,7 +115,7 @@
 			</div>
 			<br>
 			<br>
-			<div class="col-xs-11" id="text">
+			<div class="col-xs-12" id="text">
 				<span style="float:right" class="col-xs-11">
 					Embarking on a humble yet fruitful journey, Saarang, called Mardi Gras when it was started in the mid-1970s, has
 					gone on to become an integral part of the culture of Chennai. A pioneering student fest of the Indian Institute Of
@@ -142,7 +142,7 @@
 		    		</div>
 		    		<div class="col-xs-3 col-xs-offset-3 right brochure_link">
 		    			<a href="http://sponsors.saarang.org/" target="_blank">
-		    				<h2 style="letter-spacing:2px;border:5px solid #8b66a8;text-align:center">
+		    				<h2 style="letter-spacing:2px;border:5px solid #8b66a8;border-radius:5px;text-align:center">
 		    					<b>
 		    					<svg height="20" width="20">
 		  							<circle cx="20" cy="20" r="20" stroke="black" stroke-width="0" fill="#8b66a8" />
@@ -203,46 +203,48 @@
 	<hr>
 	<!-- Galery -->
 	<div class="section gallery" ng-controller="galleryCtrl">
-		<div class="col-xs-1" id="gallery_title">
-			<div class="page_title">
-				GALLERY
+		<div class="row">
+			<div class="col-xs-1" id="gallery_title">
+				<div class="page_title">
+					GALLERY
+				</div>
+				<img src="imgs/new/gallery/mushroom_cut.png" style="position:relative;top:20em;left:120%;height:50%;width:300%">
 			</div>
-			<img src="imgs/new/gallery/mushroom_cut.png" style="position:relative;top:20em;left:120%;height:50%;width:300%">
-		</div>
-		<div class="col-xs-11" style="height:95vh;overflow-y:hidden">
-			<div class="row">
-				<div class="col-xs-6 left">
-	    			<h1 style="letter-spacing:3px">SAARANG memories...</h1>
-	    		</div>
+			<div class="col-xs-11" style="height:95vh;overflow-y:hidden">
+				<div class="row">
+					<div class="col-xs-6 left">
+		    			<h1 style="letter-spacing:3px">SAARANG memories...</h1>
+		    		</div>
+				</div>
+				<div id="main_area" style="border-top:5px solid #8b66a8;height:82vh;overflow-y:hidden;overflow-x:hidden">
+			        <!-- Slider -->
+			        <div class="row">
+			            <div class="col-sm-6" id="slider-thumbs" style="height:80vh;overflow-y:scroll">
+			                <!-- Bottom switcher of slider -->
+			                <ul class="hide-bullets" ng-repeat="pic in pics">
+			                    <li class="col-sm-6">
+			                        <a class="thumbnail" ng-click="show($index)" id="carousel-selector-{{$index}}">
+			                            <img src="imgs/pics/{{pic}}">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul>
+			            </div>
+			            <div class="col-sm-6"  style="height:80vh;overflow-x:hidden;overflow-y:hidden;">
+			                <div class="col-xs-12" id="slider">
+			                    <!-- Top part of the slider -->
+			                    <div class="row">
+			                        <div class="col-sm-12">
+	                                    <div class="active item text-center">
+	                                        <img style="margin:2%;height:120%;border-radius:5px;text-align: justify;" src="imgs/pics/{{selectedPic}}">
+	                                    </div>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
 			</div>
-			<div id="main_area" style="height:82vh;overflow-y:hidden;overflow-x:hidden">
-		        <!-- Slider -->
-		        <div class="row">
-		            <div class="col-sm-6" id="slider-thumbs" style="height:80vh;overflow-y:scroll">
-		                <!-- Bottom switcher of slider -->
-		                <ul class="hide-bullets" ng-repeat="pic in pics">
-		                    <li class="col-sm-6">
-		                        <a class="thumbnail" ng-click="show($index)" id="carousel-selector-{{$index}}">
-		                            <img src="imgs/pics/{{pic}}">
-		                        </a>
-		                        <br>
-		                    </li>
-		                </ul>
-		            </div>
-		            <div class="col-sm-6"  style="height:80vh;overflow-x:hidden;overflow-y:hidden;">
-		                <div class="col-xs-12" id="slider">
-		                    <!-- Top part of the slider -->
-		                    <div class="row">
-		                        <div class="col-sm-12">
-                                    <div class="active item text-center">
-                                        <img style="margin:2%;height:120%;border-radius:5px" src="imgs/pics/{{selectedPic}}">
-                                    </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
 		</div>
 	</div>
 	<hr>
