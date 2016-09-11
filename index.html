@@ -30,7 +30,7 @@
 	      });	
 	</script> -->
 </head>
-<body style="background-color: #f8f9ff;overflow-x:hidden" ng-app="myApp">
+<body style="background-color: #f8f9ff;" ng-app="myApp">
 	<div class="section home" style="height:100vh;overflow-y:hidden">
 		<img class="home_images" src="imgs/new/1_page/sky_clouds.png">
 		<span class="landing_title">S A A R A N G</span>
@@ -203,7 +203,7 @@
 	<hr>
 	<!-- Galery -->
 	<div class="section gallery" ng-controller="galleryCtrl">
-		<div class="row">
+		<div class="row" style="width:100%;overflow-x:hidden">
 			<div class="col-xs-1" id="gallery_title">
 				<div class="page_title">
 					GALLERY
@@ -217,7 +217,6 @@
 		    		</div>
 				</div>
 				<div id="main_area" style="border-top:5px solid #8b66a8;height:82vh;overflow-y:hidden;overflow-x:hidden">
-			        <!-- Slider -->
 			        <div class="row">
 			            <div class="col-sm-6" id="slider-thumbs" style="height:80vh;overflow-y:scroll">
 			                <!-- Bottom switcher of slider -->
