@@ -45,3 +45,18 @@
 	font-size: 7em;
 	font-weight: 800;
 }
+
+.pollen{
+	position:relative;
+	top:10em;
+	left:320%;
+	animation-name: disp;
+	animation-iteration-count: infinite;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+}
+
+@keyframes disp{
+	from{left:320%;}
+	to{left:322%;}
+}
