@@ -223,19 +223,6 @@
 	to{right:3.063em;}
 }
 
-.scrl_img{
-	animation-name: oscillate;
-	animation-iteration-count: infinite;
-	animation-duration: 0.3s;
-	animation-direction: alternate;
-	animation-delay: 6s;
-}
-
-@keyframes oscillate{
-	from{top:95vh;}
-	to{top:96vh;}
-}
-
 /*#tree:hover{
 	animation-name: parallax14;
 	animation-duration:2s;
