@@ -223,6 +223,18 @@
 	to{right:3.063em;}
 }
 
+.scroll{
+	animation-name: oscillate;
+	animation-duration: 0.3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes oscillate{
+	from{top:95vh;}
+	to{top:94vh;}
+}
+
 /*#tree:hover{
 	animation-name: parallax14;
 	animation-duration:2s;
