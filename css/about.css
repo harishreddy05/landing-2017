@@ -64,11 +64,11 @@
 
 .about .cloud01{
 	position: absolute;
-	top: 50%;
+	top: 150%;
 	left: 7%;
 	z-index: -1;
 	opacity: 0.25;
-	animation: anim_cloud01 170s linear infinite;
+	animation: anim_cloud01 400s linear infinite;
 }
 
 @keyframes anim_cloud01{
@@ -82,26 +82,26 @@
 .about .cloud02{
 	position: absolute;
 	opacity: 0.5;
-	top: 3%;
+	top: 103%;
 	left: 10%;
 	z-index: -1;
-	animation: anim_cloud02 150s linear infinite;
+	animation: anim_cloud02 400s linear infinite;
 }
 
 @keyframes anim_cloud02{
 	0% {left: 10%;}
-	81% {left: 85%; opacity: 0;}
-	82% {left: -5%; opacity: 0;}
-	83% {opacity: 0.5;}
+	76% {left: 85%; opacity: 0;}
+	77% {left: -5%; opacity: 0;}
+	80% {opacity: 0.5;}
 	100% {left: 10%;}
 }
 .about .cloud03{
 	position: absolute;
 	opacity: 0.15;
-	top: 17%;
+	top: 117%;
 	left: -2%;
 	z-index: -1;
-	animation: anim_cloud03 170s linear infinite;
+	animation: anim_cloud03 350s linear infinite;
 }
 @keyframes anim_cloud03{
 	0% {left: -2%;}
@@ -111,25 +111,25 @@
 }
 .about .cloud04{
 	position: absolute;
-	opacity: 0.15;
-	top: 37%;
-	left: 3%;
+	opacity: 0.45;
+	top: 137%;
+	left: 13%;
 	z-index: -1;
-	animation: anim_cloud04 150s linear infinite;
+	animation: anim_cloud04 400s linear infinite;
 }
 @keyframes anim_cloud04{
-	0% {left: 3%;}
+	0% {left: 13%;}
 	81% {opacity: 0; left: 80%;}
 	83% {left: -10%; opacity: 0;}
-	100% {left: 3%; opacity: 0.15;}
+	100% {left: 13%; opacity: 0.15;}
 }
 .about .cloud05{
 	position: absolute;
 	left: 37%;
-	top: 2%;
+	top: 110%;
 	opacity: 0.35;
 	z-index: -1;
-	animation: anim_cloud05 180s infinite;
+	animation: anim_cloud05 400s linear infinite;
 }
 @keyframes anim_cloud05{
 	0% {left: 37%;}
@@ -141,10 +141,10 @@
 .about .cloud06{
 	position: absolute;
 	left: 92%;
-	top: 35%;
+	top: 135%;
 	opacity: 0.15;
 	z-index: -1;
-	animation: anim_cloud06 250s infinite;
+	animation: anim_cloud06 400s linear infinite;
 }
 @keyframes anim_cloud06{
 	0% {left: 92%;}
@@ -155,71 +155,71 @@
 }
 .about .cloud07{
 	position: absolute;
-	left: 80%;
-	top: 5%;
+	left: 70%;
+	top: 105%;
 	opacity: 0.25;
 	z-index: -1;
-	animation: anim_cloud07 250s infinite;
+	animation: anim_cloud07 400s linear infinite;
 }
 @keyframes anim_cloud07{
-	0% {left: 80%;}
-	9% {opacity: 0; left: 87%;}
-	10% {left: -5%; opacity: 0;}
-	15% {opacity: 0.25;}
-	100% {left: 80%;}
+	0% {left: 70%;}
+	19% {opacity: 0; left: 87%;}
+	20% {left: -5%; opacity: 0;}
+	25% {opacity: 0.25;}
+	100% {left: 70%;}
 }
 .about .cloud08{
 	position: absolute;
-	left: 19%;
-	top: 17%;
+	left: 59%;
+	top: 127%;
 	opacity: 0.25;
 	z-index: -1;
-	animation: anim_cloud08 170s infinite;
+	animation: anim_cloud08 400s linear infinite;
 }
 @keyframes anim_cloud08{
-	0% {left: 19%;}
-	75% {opacity: 0; left: 80%;}
-	76% {left: -10%; opacity: 0;}
-	80% {opacity: 0.35;}
-	100% {left: 19%;}
+	0% {left: 59%;}
+	20% {opacity: 0; left: 80%;}
+	21% {left: -10%; opacity: 0;}
+	35% {opacity: 0.35;}
+	100% {left: 59%;}
 }
 .about .cloud09{
 	position: absolute;
-	left: 90%;
-	top: 47%;
+	left: 60%;
+	top: 147%;
 	opacity: 0.25;
 	z-index: -1;
-	animation: anim_cloud09 240s infinite;
+	animation: anim_cloud09 400s linear infinite;
 }
 @keyframes anim_cloud09{
-	0% {left: 90%;}
-	2% {opacity: 0; left: 92%;}
-	4% {left: -10%; opacity: 0;}
-	8% {opacity: 0.15;}
-	100% {left: 90%;}
+	0% {left: 60%;}
+	29% {opacity: 0; left: 90%;}
+	30% {left: -10%; opacity: 0;}
+	34% {opacity: 0.15;}
+	100% {left: 60%;}
 }
 .about .cloud10{
 	position: absolute;
 	left: 90%;
-	top: 7%;
+	top: 107%;
 	opacity: 0.25;
 	z-index: -1;
-	animation: anim_cloud10 200s infinite;
+	animation: anim_cloud10 450s linear infinite;
 }
 @keyframes anim_cloud10{
 	0% {left: 90%;}
-	2% {opacity: 0; left: 92%;}
+	2% {opacity: 0; left: 91%;}
 	4% {left: -2%; opacity: 0;}
-	8% {opacity: 0.15;}
+	6% {opacity: 0.15;}
 	100% {left: 90%;}
 }
 .about .cloud11{
 	position: absolute;
 	left: 37%;
-	top: 40%;
+	top: 140%;
 	opacity: 0.25;
 	z-index: -1;
-	animation: anim_cloud11 200s infinite;
+	animation: anim_cloud11 400s linear infinite;
 }
 @keyframes anim_cloud11{
 	0% {left: 37%;}
