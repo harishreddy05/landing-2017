@@ -65,7 +65,7 @@ div.text{
 	-webkit-transform-origin: 102% 110%;
 	transform: rotate(-90deg) translateX(100%);
 	transform-origin: 102% 110%;
-	font-size: 6em;
+	font-size: 8em;
 	font-weight: 800;
 }
 .contact span {

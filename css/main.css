@@ -55,7 +55,7 @@
 
 @keyframes parallax1{
 	from{left:0.625em;bottom:1em;}
-	to{left:1.25em;bottom:0.688em;}
+	to{left:2.25em;bottom:0.688em;}
 }
 
 .home #light2{
@@ -67,7 +67,7 @@
 
 @keyframes parallax2{
 	from{left:7.5em;bottom:7em;}
-	to{left:8.125em;bottom:7.313em;}
+	to{left:9.125em;bottom:7.313em;}
 }
 
 .home #light3{
@@ -79,7 +79,7 @@
 
 @keyframes parallax3{
 	from{left:12.75em;bottom:0em;}
-	to{left:13.375em;bottom:-0.563em;}
+	to{left:15.375em;bottom:-0.563em;}
 }
 
 .home #light4{
@@ -91,7 +91,7 @@
 }
 
 @keyframes parallax4{
-	from{right:12.875em;}
+	from{right:10.875em;}
 	to{right:13.5em;}
 }
 
@@ -104,7 +104,7 @@
 
 @keyframes parallax5{
 	from{right:17.5em;bottom:9.5em;}
-	to{right:18.125em;bottom:9.938em;}
+	to{right:20.125em;bottom:9.938em;}
 }
 
 .home #light6{
@@ -117,7 +117,7 @@
 
 @keyframes parallax6{
 	from{left:22.25em;}
-	to{left:22.875em;}
+	to{left:25.875em;}
 }
 
 .home #light7{
@@ -130,7 +130,7 @@
 
 @keyframes parallax7{
 	from{left:30.25em;}
-	to{left:30.875em;}
+	to{left:33.875em;}
 }
 
 .home #light8{
@@ -142,7 +142,7 @@
 }
 
 @keyframes parallax8{
-	from{right:0.375em;}
+	from{right:4.375em;}
 	to{right:0em;}
 }
 
@@ -156,7 +156,7 @@
 
 @keyframes parallax9{
 	from{right:38.125em;}
-	to{right:38.750em;}
+	to{right:41.750em;}
 }
 
 .home #light10{
@@ -168,7 +168,7 @@
 
 @keyframes parallax10{
 	from{left:38.25em;bottom:2.875em;}
-	to{left:40.75em;bottom:3.75em;}
+	to{left:44.75em;bottom:3.75em;}
 }
 
 .home #light11{
@@ -180,7 +180,7 @@
 }
 
 @keyframes parallax11{
-	from{right:32em;}
+	from{right:30em;}
 	to{right:32.875em;}
 }
 
@@ -194,7 +194,7 @@
 
 @keyframes parallax12{
 	from{left:28.375em;}
-	to{left:28em;}
+	to{left:30em;}
 }
 
 .home #light13{
@@ -207,7 +207,7 @@
 
 @keyframes parallax13{
 	from{right:26.125em;}
-	to{right:27.063em;}
+	to{right:29.063em;}
 }
 
 .home #light14{
@@ -220,19 +220,19 @@
 
 @keyframes parallax14{
 	from{right:2.125em;}
-	to{right:3.063em;}
+	to{right:5.063em;}
 }
 
 .scroll{
 	animation-name: oscillate;
-	animation-duration: 0.3s;
+	animation-duration: 1.5s;
 	animation-direction: alternate;
 	animation-iteration-count: infinite;
 }
 
 @keyframes oscillate{
-	from{top:95vh;}
-	to{top:94vh;}
+	from{opacity:1;}
+	to{opacity:0;}
 }
 
 /*#tree:hover{
