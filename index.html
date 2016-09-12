@@ -247,7 +247,6 @@
 				<img src="imgs/new/gallery/pollen_cut.png" style="position:absolute;margin-top:150%;top:27em;left:60%">
 				<img src="imgs/new/gallery/pollen_cut.png" style="position:absolute;margin-top:150%;top:29em;left:70%">
 				<img src="imgs/new/gallery/pollen_cut.png" style="position:absolute;margin-top:150%;top:31em;left:80%">
-
 			<div class="col-xs-11" style="height:95vh;overflow-y:hidden;font-family: 'Indie Flower', cursive">
 				<div class="row">
 					<div class="col-xs-6 left">
@@ -267,13 +266,13 @@
 			                    </li>
 			                </ul>
 			            </div>
-			            <div class="col-sm-6"  style="height:80vh;overflow-x:hidden;overflow-y:hidden;">
+			            <div class="col-sm-6"  style="height:80vh;overflow-x:scroll;overflow-y:scroll;">
 			                <div class="col-xs-12" id="slider">
 			                    <!-- Top part of the slider -->
 			                    <div class="row">
 			                        <div class="col-sm-12">
 	                                    <div class="active item text-center">
-	                                        <img style="margin:2%;height:120%;border-radius:5px;text-align: justify;" src="imgs/pics/{{selectedPic}}">
+	                                        <img style="margin:auto;height:120%;border-radius:5px;text-align: justify;" src="imgs/pics/{{selectedPic}}">
 	                                    </div>
 			                        </div>
 			                    </div>
@@ -350,6 +349,41 @@
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     width: 100%;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #bc73f4;
+  border: 100px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 100px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 </style>
 </html>
