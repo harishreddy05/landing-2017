@@ -237,7 +237,7 @@
 	<!-- Galery -->
 	<div class="section gallery" ng-controller="galleryCtrl">
 		<div class="row" style="width:100%;overflow-x:hidden">
-			<div class="col-xs-2 hidden-sm hidden-xs" id="gallery_title" style="font-family: 'Oswald', sans-serif;">
+			<div class="col-md-2 hidden-sm hidden-xs" id="gallery_title" style="font-family: 'Oswald', sans-serif;">
 				<div class="page_title">
 					GALLERY
 					<div class="parent"><div class="child"></div></div>
@@ -265,16 +265,15 @@
 				<img src="imgs/new/gallery/pollen_cut.png" style="position:absolute;margin-top:150%;top:21em;left:50%">
 				<img src="imgs/new/gallery/pollen_cut.png" style="position:absolute;margin-top:150%;top:23em;left:30%">
 				<img src="imgs/new/gallery/pollen_cut.png" style="position:absolute;margin-top:150%;top:27em;left:60%">
-			<div class="col-xs-10" style="height:95vh;overflow-y:hidden;">
+			<div class="col-xs-offset-1 col-xs-10 col-md-10 col-md-offset-0" style="height:95vh;overflow-y:hidden;">
 				<div class="row">
-					<div class="col-xs-6 left">
+					<div class="col-xs-12 left">
 		    			<h1 style="letter-spacing:3px;font-family: 'Oswald', sans-serif;">SAARANG memories...</h1>
 		    		</div>
 				</div>
 				<div id="main_area" style="height:82vh;overflow-y:hidden;overflow-x:hidden">
 			        <div class="row">
 			            <div class="col-sm-6" id="slider-thumbs" style="height:80vh;overflow-y:scroll">
-			                <!-- Bottom switcher of slider -->
 			                <ul class="hide-bullets" ng-repeat="pic in pics">
 			                    <li class="col-sm-6">
 			                        <a class="thumbnail" ng-mouseover="show($index)" id="carousel-selector-{{$index}}">
