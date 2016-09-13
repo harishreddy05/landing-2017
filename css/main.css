@@ -66,8 +66,8 @@
 }
 
 @keyframes parallax2{
-	from{left:7.5em;bottom:7em;}
-	to{left:9.125em;bottom:7.313em;}
+	from{left:7.5em;bottom:5em;}
+	to{left:9.125em;bottom:5.313em;}
 }
 
 .home #light3{
@@ -103,12 +103,12 @@
 }
 
 @keyframes parallax5{
-	from{right:17.5em;bottom:9.5em;}
-	to{right:20.125em;bottom:9.938em;}
+	from{right:17.5em;bottom:6.5em;}
+	to{right:20.125em;bottom:6.938em;}
 }
 
 .home #light6{
-	bottom:7.75em;
+	bottom:5.75em;
 	animation-name: parallax6;
 	animation-duration: 1.6s;
 	animation-iteration-count: infinite;
@@ -121,7 +121,7 @@
 }
 
 .home #light7{
-	bottom:12em;
+	bottom:9em;
 	animation-name: parallax7;
 	animation-duration: 1.55s;
 	animation-iteration-count: infinite;
@@ -147,7 +147,7 @@
 }
 
 .home #light9{
-	bottom:8.438em;
+	bottom:6.438em;
 	animation-name: parallax9;
 	animation-duration: 1.78s;
 	animation-iteration-count: infinite;
