@@ -23,7 +23,7 @@
 	text-align-last: right;
 	-moz-text-align-last: right;
 }
-.spons #spons_title:after {
+/*.spons #spons_title:after {
   content: '';
   height: 95%;
   width: 4px;
@@ -31,7 +31,7 @@
   right: 0;
   bottom: 0em; 
   background-color: grey;
-}
+}*/
 .spons .page_title{
 	position: absolute;
 	bottom: 5%;

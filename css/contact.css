@@ -45,7 +45,7 @@ div.text{
 	text-align-last: right;
 	-moz-text-align-last: right;
 }
-.contact #contact_title:after {
+/*.contact #contact_title:after {
   content: '';
   height: 90%;
   width: 2px;
@@ -54,7 +54,7 @@ div.text{
   bottom: 0em; 
 
   background-color: #000000;
-}
+}*/
 .contact .page_title{
 	position: absolute;
 	bottom: 5%;

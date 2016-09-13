@@ -37,7 +37,7 @@
 	-moz-text-align-last: right;
 }
 
-.about #title:after {
+/*.about #title:after {
   content: '';
   height: 95%;
   width: 4px;
@@ -45,7 +45,7 @@
   right: 0;
   bottom: 0em; 
   background-color: grey;
-}
+}*/
 
 .about .page_title{
 	position: absolute;
