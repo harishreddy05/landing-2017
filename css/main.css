@@ -143,7 +143,7 @@
 
 @keyframes parallax8{
 	from{right:4.375em;}
-	to{right:0em;}
+	to{right:1em;}
 }
 
 .home #light9{
@@ -167,8 +167,8 @@
 }
 
 @keyframes parallax10{
-	from{left:28.25em;bottom:2.875em;}
-	to{left:34.75em;bottom:3.75em;}
+	from{left:25.25em;bottom:2.875em;}
+	to{left:30.75em;bottom:3.75em;}
 }
 
 .home #light11{
@@ -219,8 +219,8 @@
 }
 
 @keyframes parallax14{
-	from{right:2.125em;}
-	to{right:5.063em;}
+	from{right:3.125em;}
+	to{right:6.063em;}
 }
 
 .scroll{
