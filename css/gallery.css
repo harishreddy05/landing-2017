@@ -24,7 +24,7 @@
 	text-align-last: right;
 	-moz-text-align-last: right;
 }
-.gallery  #gallery_title:after {
+/*.gallery  #gallery_title:after {
   content: '';
   height: 90%;
   width: 4px;
@@ -32,7 +32,7 @@
   right: 0;
   bottom: 0em; 
   background-color: grey;
-}
+}*/
 .gallery  .page_title{
 	position: absolute;
 	bottom: 5%;
